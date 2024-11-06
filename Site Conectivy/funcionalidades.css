@@ -1,0 +1,133 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1b1c1b;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    margin: 0 0 20px 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.logo {
+    height: 80px; 
+    width: auto; 
+    margin-right: 10px;
+    
+}
+
+
+.navbar {
+    background-color:  #111211;
+    padding: 15px 20px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 60px;
+    gap: 20px;
+}
+
+.logo {
+    height: 50px; 
+    width: auto; 
+    margin-right: 10px; 
+}
+
+
+.brand {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; 
+}
+
+.nav-links li {
+    margin-left: 0;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00f060;
+}
+
+
+
+#funcionalidades {
+    padding: 50px 20px;
+    background-color: #1b1c1b;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#funcionalidades h2 {
+    font-size: 36px;
+    color: #00f060;
+    margin-bottom: 40px;
+}
+
+.funcionalidades-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.funcionalidade-card {
+    background-color: #111211;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.funcionalidade-card:hover {
+    transform: translateY(-5px);
+}
+
+.funcionalidade-card h3 {
+    color: #00f060;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+    #funcionalidades h2 {
+        font-size: 28px;
+    }
+    .funcionalidade-card {
+        width: 90%;
+    }
+}
